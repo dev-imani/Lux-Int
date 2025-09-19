@@ -22,8 +22,8 @@ body{
 }
 
 section{
-    margin: 2em 1em;
-    min-height: 50vh;
+    margin: 10em 1em;
+    min-height: 60vh;
 }
 
 img{
@@ -121,7 +121,7 @@ header nav{
 
 /* STATS SECTION */
 .stat-section{
-    margin-top: 6em;
+    margin-top: 10em;
 }
 
 .stat-container{
@@ -187,6 +187,7 @@ header nav{
 
 .process-timeline-container{
     display: flex;
+    flex-direction: column;
     gap: 2em;
 }
 
@@ -291,12 +292,32 @@ footer div{
     .process-container{
         display: flex;
     }
-
     
-.testimony-container{
+    .stat-container{
+        flex-direction: row;
+    }
+
+    .stats-textual-contents .stat-main-description{
+        text-align: end;
+   
+    }
+      
+    .process-container{
+        flex-direction: row;
+    }
+
+    .process-timeline-container{
     flex-direction: row;
+
 }
 
+    .stat-image{
+        min-width: 25em;
+    }
+    
+    .testimony-container{
+        flex-direction: row;
+    }
 } 
 
 
