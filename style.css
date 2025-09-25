@@ -1,0 +1,334 @@
+:root{
+    background-color: gainsboro;
+    --primary-color: rgb(64, 114, 145);
+    --secondry-color: rgb(202, 208, 218);
+
+}
+
+.profile-pic{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+}
+
+section{
+    margin: 10em 1em;
+    min-height: 60vh;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: 50em;
+}
+
+/* HEADER SECTION */
+header{
+    background-color: rgb(28, 28, 30);
+    padding: 1em;
+    color: white;
+    position: relative;
+}
+
+header .logo{
+    font-size: 3em;
+    font-weight: 800px
+}
+
+header nav{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:  rgb(28, 28, 30) ;
+    /* margin-top:; */
+    display: none;
+}
+
+/* HERO SECTION  */
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text{
+    padding-top: 4em;
+    text-align: center;
+}
+
+.hero-text h1{
+    font-size: 2em;
+    /* text-align: center; */
+    margin-bottom: 1em;
+}
+
+.hero-text p{
+   margin-bottom: 1em;
+   color: rgb(71, 71, 71);
+}
+
+
+
+/* BENEFITS SECTION */
+.benefif-section{
+    margin-top: 6em;
+}
+
+.benefif-section h1{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.benefit-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 2em;
+}
+
+.benefit-container .benefit-card{
+    margin-top: 1em;
+    padding: 1em;
+    border: 1px solid  rgb(64, 114, 145);
+    border-radius: 10px;
+    transition: translate 1s ease;
+}
+
+
+.benefit-container .benefit-card:hover{
+    translate: 0px 3px ;
+}
+
+.benefit-card i{
+   color: var(--primary-color);
+}
+
+.benefit-container .benefit-card h3{
+    color: rgb(28, 51, 71);
+    font-size: 1.5em;
+    margin-bottom: 0.51em;
+}
+
+
+/* STATS SECTION */
+.stat-section{
+    margin-top: 10em;
+}
+
+.stat-container{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.stat-container .stat-card{
+    padding: 0.51em;
+    /* border: 1px solid rgb(197, 197, 197); */
+    border-radius: 10px;
+} 
+
+.stat-container .stat-card h2{
+    font-size: 2em;
+} 
+
+.stats-textual-contents h1{
+    text-align: end;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.stats-textual-contents p{
+    color: rgb(46, 46, 46);
+}
+
+.stat-card-container{
+    margin-top: 2em;
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+}
+.stat-learn-btn-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.stats-textual-contents button{
+    margin-top: 4em ;
+    width: 20em;
+    padding: 5px;
+    font-weight: 700;
+    border: 2px solid black;
+}
+
+.stats-textual-contents button i{
+    width: 4em;
+}
+
+
+/* PROCESS SECTION */
+.process-section{
+    margin-top: 6em;
+}
+
+.process-container{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.process-timeline-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.process-timeline{
+    background-color: var(--primary-color);
+    width: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position : relative;
+
+}
+
+.process-timeline span{
+    color: white;
+    width: 2em;
+    height: 2em;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 50%;
+    gap: 2em;
+    /* position: absolute; */
+}
+
+.process-timeline-content div{
+    margin-top: 3em;
+}
+
+.process-timeline-content div h2{
+    color: var(--primary-color);
+    margin: 0.7em 0em;
+    font-size: 1.5em;
+}
+
+
+
+/* TESTIMONY SECTION */
+
+
+.testimony-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.testimony-card{
+    background-color: var(--primary-color);
+    padding: 1em;
+    color: white;
+}
+
+.testimony-card h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.testimony-card p{
+    color: var(--secondry-color);
+
+}
+
+
+.testimony-profile-card{
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+
+/* SUBSCRIBE SECTION */
+
+.subscribe-section{
+    background-color: var(--secondry-color);
+    text-align: center;
+    padding-top: 4em;
+}
+
+.subscribe-section h1{
+    font-size: 2em;
+    color: black;
+    margin-bottom: 0.6em;
+}
+
+
+footer{
+    background-color: var(--primary-color);
+    color: white;
+    min-height: 60;
+    padding: 1em;
+}
+
+footer div{
+    margin-bottom: 3em;
+}
+
+
+@media(min-width:600px){
+    .hero-container{
+        display: flex;
+        gap: 2em;
+    }
+    .process-container{
+        display: flex;
+    }
+    
+    .stat-container{
+        flex-direction: row;
+    }
+
+    .stats-textual-contents .stat-main-description{
+        text-align: end;
+   
+    }
+      
+    .process-container{
+        flex-direction: row;
+    }
+
+    .process-timeline-container{
+    flex-direction: row;
+
+}
+
+    .stat-image{
+        min-width: 25em;
+    }
+    
+    .testimony-container{
+        flex-direction: row;
+    }
+} 
+
+
+@media(min-width:768px){
+    .benefit-container .benefit-card{
+        display: flex;
+        min-height: 10em;
+        gap: 2em;
+    }
+    .stat-container .stat-card h2{
+    font-size: 3em;
+} 
+
+}
